@@ -1,0 +1,125 @@
+{
+  "no_family_replacement_after_registration": true,
+  "prospective": [
+    {
+      "baseline_name": "no_challenge",
+      "baseline_type": 1,
+      "id": 2,
+      "name": "resize",
+      "severity_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "baseline_name": "no_challenge",
+      "baseline_type": 1,
+      "id": 6,
+      "name": "contrast",
+      "severity_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "baseline_name": "grayscale",
+      "baseline_type": 10,
+      "id": 11,
+      "name": "grayscale_resize",
+      "severity_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "baseline_name": "grayscale",
+      "baseline_type": 10,
+      "id": 12,
+      "name": "grayscale_underexposure",
+      "severity_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "baseline_name": "grayscale",
+      "baseline_type": 10,
+      "id": 13,
+      "name": "grayscale_overexposure",
+      "severity_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "baseline_name": "grayscale",
+      "baseline_type": 10,
+      "id": 14,
+      "name": "grayscale_gaussian_blur",
+      "severity_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "baseline_name": "grayscale",
+      "baseline_type": 10,
+      "id": 15,
+      "name": "grayscale_contrast",
+      "severity_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "baseline_name": "grayscale",
+      "baseline_type": 10,
+      "id": 16,
+      "name": "grayscale_dirty_lens_1",
+      "severity_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "baseline_name": "grayscale",
+      "baseline_type": 10,
+      "id": 17,
+      "name": "grayscale_dirty_lens_2",
+      "severity_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "baseline_name": "grayscale",
+      "baseline_type": 10,
+      "id": 18,
+      "name": "grayscale_salt_pepper",
+      "severity_levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ]
+}

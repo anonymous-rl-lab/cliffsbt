@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use sbt-monitor, cite the software archive and the associated signed boundary transport manuscript."
+title: "sbt-monitor: ledger-first signed boundary transport monitoring tools"
+type: software
+version: 0.1.0
+date-released: 2026-08-18
+license: Apache-2.0
+authors:
+  - name: SBT Monitor Contributors
+abstract: "Exact identity-paired transport ledgers, operational event rules, outcome-blind transport proxies, diagnostics, and experimental domain-calibrated warning workflows."
+keywords:
+  - signed boundary transport
+  - model monitoring
+  - distribution shift
+  - generalization cliff

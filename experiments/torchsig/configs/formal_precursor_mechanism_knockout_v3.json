@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "experiment_name": "generalization_cliff_formal_precursor_mechanism_knockout_v3",
+  "output_tag": "formal_precursor_mechanism_knockout_v3",
+  "source_run": "formal_precursor_source_v3_deterministic",
+  "analysis_seed": 20260831,
+  "decision_if_passed": "independent fresh-seed matched-order confirmation passes all frozen gates: persistent accumulation is the identified source of the prospective telemetry increment within the tested local-drift regime",
+  "decision_if_failed": "independent fresh-seed matched-order confirmation does not pass the frozen mechanism gates",
+  "method": "compressed_current",
+  "history_windows": 6,
+  "forecast_horizon": 5,
+  "shuffle_draws_per_replicate": 240,
+  "bootstrap_draws": 10000,
+  "bootstrap_confidence": 0.95,
+  "matched_design": {
+    "evaluation_start_time": 0,
+    "preserve_terminal_pre_crossing_state": true,
+    "preserve_state_multiset": true,
+    "shared_revealed_future": true,
+    "primary_window": "the five windows immediately preceding the independently revealed crossing",
+    "sudden_jump_proxy": "matched stationary-safe telemetry scored against the event crossing time"
+  },
+  "probe_gates": {
+    "minimum_mean_integrated_slope_difference": 0.003,
+    "minimum_mean_integrated_forecast_difference": 0.02,
+    "minimum_pair_superiority_rate": 0.90,
+    "minimum_positive_slope_fraction_difference": 0.20,
+    "minimum_any_window_alarm_rate_difference": 0.15,
+    "maximum_sudden_jump_proxy_pre_warning_rate": 0.10,
+    "require_all_direction_forecast_differences_positive": true,
+    "require_bootstrap_lower_bound_positive": true
+  },
+  "semantics": {
+    "ordered": "fresh-seed telemetry in the original persistent degradation order",
+    "shuffled": "the identical pre-crossing telemetry multiset with the terminal state fixed and all earlier windows permuted",
+    "sudden_jump_proxy": "fresh-seed stationary-safe prehistory paired with the independently revealed event crossing time",
+    "scope": "independent fresh-seed confirmation over the two calibration-feasible directions; v1 geometry failure and v2 reproduction failure are retained separately"
+  }
+}

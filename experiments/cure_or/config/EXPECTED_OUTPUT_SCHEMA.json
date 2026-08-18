@@ -1,0 +1,25 @@
+{
+  "phase1_required": [
+    "run_metadata.json",
+    "calibration_assessment.json",
+    "blind_predictions.npz",
+    "blind_alarm_rows.json",
+    "BLIND_OUTPUTS.sha256"
+  ],
+  "phase2_required": [
+    "results.json",
+    "seed_level_results.csv",
+    "path_level_results.csv",
+    "repair_path_results.csv",
+    "POSTREVEAL.sha256",
+    "EVIDENCE.sha256"
+  ],
+  "results_required_keys": [
+    "integrity",
+    "h1_formation",
+    "h2_warning",
+    "h3_repair",
+    "overall_decision",
+    "claim_boundary"
+  ]
+}

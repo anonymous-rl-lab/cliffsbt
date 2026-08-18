@@ -1,0 +1,41 @@
+{
+  "experiment": "covtype_robust_margin_transport_fresh_holdout_v1",
+  "evaluation": {
+    "lower_inclusive_m": 2745,
+    "upper_exclusive_m": 3330,
+    "block_width_m": 45,
+    "block_count": 13,
+    "examples_per_class_per_block": 64,
+    "selection_seed": 2026081801
+  },
+  "training_panel": "../work_covtype_45m_formal_v1/data/block_panels.npz",
+  "directions": ["ascending", "descending"],
+  "origin_blocks": [3, 7, 10],
+  "target_horizon_blocks": 3,
+  "model_seeds": [2026081551, 2026081552, 2026081553, 2026081554, 2026081555],
+  "margin_transport": {
+    "boundary_band_training_abs_margin_quantile": 0.2,
+    "robust_statistic": "median_equal_quantile_velocity",
+    "trim_fraction_each_tail": 0.1
+  },
+  "controls": {
+    "permuted_boundaries": 128,
+    "seed": 2026081891
+  },
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 2026081892
+  },
+  "gate": {
+    "minimum_median_error_spearman": 0.65,
+    "minimum_sign_accuracy": 0.75,
+    "minimum_each_direction_spearman": 0.5,
+    "minimum_advantage_over_mean": 0.2,
+    "minimum_advantage_over_unsigned_distance": 0.2,
+    "minimum_sources_with_sign_accuracy_at_least_0_6": 4,
+    "require_true_boundary_above_placebo_q95": true,
+    "minimum_two_way_bootstrap_median_lower": 0.4,
+    "require_two_way_bootstrap_mean_advantage_lower_above_zero": true,
+    "require_two_way_bootstrap_distance_advantage_lower_above_zero": true
+  }
+}

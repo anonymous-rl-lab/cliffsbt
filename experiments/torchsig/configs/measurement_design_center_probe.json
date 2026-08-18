@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "experiment_name": "generalization_cliff_measurement_design_center_screen",
+  "output_tag": "measurement_design_center_probe",
+  "channels": ["rich"],
+  "master_seed": 20260817,
+  "classes": ["bpsk", "qpsk", "8psk", "16qam"],
+  "signal": {
+    "sample_rate": 1.0,
+    "bandwidth": 0.25,
+    "num_iq_samples": 512,
+    "pulse_shape": "srrc",
+    "alpha_rolloff": 0.35
+  },
+  "training": {
+    "samples_per_class": 500,
+    "theta_low": -0.8,
+    "theta_high": -0.4,
+    "n_estimators": 240,
+    "min_samples_leaf": 2
+  },
+  "calibration": {
+    "theta_center": [0.75, 0.30, 0.0],
+    "theta_offset_levels": [-0.08, 0.0, 0.08],
+    "samples_per_environment": 128,
+    "covariance_shrinkage": "LedoitWolf",
+    "boundary_definition": "risk-surface intercept"
+  },
+  "risk_surface": {
+    "type": "quadratic",
+    "ridge_alpha": 0.0001,
+    "cv_folds": 5,
+    "mechanism_ball_radius": 0.06,
+    "remainder_buffer": 0.015
+  },
+  "target": {
+    "risk_margin_gamma": 0.025,
+    "rank_relative_tolerance": 0.03,
+    "null_ratio_threshold": 0.20
+  },
+  "measurement_design": {
+    "budgets": [6, 12, 18, 27, 36, 54],
+    "centers": [
+      {"name": "balanced", "theta_center": [0.75, 0.30, 0.0]},
+      {"name": "noise_heavy", "theta_center": [0.95, 0.05, -0.15]},
+      {"name": "phase_heavy", "theta_center": [0.45, 0.65, -0.15]},
+      {"name": "nonlinearity_heavy", "theta_center": [0.45, 0.10, 0.55]}
+    ]
+  },
+  "pilot_gates": {
+    "minimum_risk_surface_r2": 0.70,
+    "minimum_risk_surface_cv_r2": 0.50,
+    "minimum_relevant_score_linear_r2": 0.80,
+    "rich_max_null_ratio": 0.20,
+    "maximum_optimizer_constraint_error": 0.000001,
+    "minimum_support_slack": -0.0001,
+    "maximum_fold_constraint_error": 0.02
+  }
+}

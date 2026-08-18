@@ -1,0 +1,83 @@
+{
+  "all_pass": true,
+  "artifacts": {
+    "SHA256SUMS.txt": {
+      "sha256": "0a504c8e526f3352e592898b622f2fb67f047c279b78c15c2a4f8c47cef27485",
+      "size_bytes": 192
+    },
+    "sbt_monitor-0.1.0-py3-none-any.whl": {
+      "sha256": "a5b75661fd8201091917295a32d9949e6aa0101e8c33840a089935ddf9d55df8",
+      "size_bytes": 39770
+    },
+    "sbt_monitor-0.1.0.tar.gz": {
+      "sha256": "da2c685c07d3892fa3434a338cd633ce4266ee5ca9dfd243cbbc01a22e29fb7e",
+      "size_bytes": 48367
+    }
+  },
+  "checks": [
+    {
+      "message": "bundled specification matches root specification",
+      "pass": true
+    },
+    {
+      "message": "experimental warning calibrator is not top-level",
+      "pass": true
+    },
+    {
+      "message": "online proxy implementation does not use prohibited net_sbt name",
+      "pass": true
+    },
+    {
+      "message": "source test suite passes",
+      "pass": true
+    },
+    {
+      "message": "exactly one wheel exists",
+      "pass": true
+    },
+    {
+      "message": "exactly one sdist exists",
+      "pass": true
+    },
+    {
+      "message": "wheel ZIP integrity passes",
+      "pass": true
+    },
+    {
+      "message": "wheel name is sbt-monitor",
+      "pass": true
+    },
+    {
+      "message": "wheel version is 0.1.0",
+      "pass": true
+    },
+    {
+      "message": "wheel license expression is Apache-2.0",
+      "pass": true
+    },
+    {
+      "message": "wheel contains frozen specification",
+      "pass": true
+    },
+    {
+      "message": "sdist contains tests",
+      "pass": true
+    },
+    {
+      "message": "sdist contains documentation",
+      "pass": true
+    }
+  ],
+  "metadata": {
+    "description_content_type": "text/markdown",
+    "license_expression": "Apache-2.0",
+    "name": "sbt-monitor",
+    "requires_python": ">=3.10",
+    "version": "0.1.0"
+  },
+  "package": "sbt-monitor",
+  "spec_sha256": "5d0c834f3cd6b7a5f3826fb002aff101fcd0b83fa099828636874ad1cb7ad80b",
+  "test_stderr": "",
+  "test_stdout": ".....................                                                    [100%]\n21 passed in 1.04s\n",
+  "version": "0.1.0"
+}

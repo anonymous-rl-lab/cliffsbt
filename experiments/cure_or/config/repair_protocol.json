@@ -1,0 +1,25 @@
+{
+  "protocol_version": "2.0",
+  "name": "full-deployment-fragment coverage with calibration safety gate",
+  "candidate_pool": "all 100 target-family x class fragments",
+  "samples_per_fragment": 5,
+  "total_budget": 500,
+  "candidate_order": "ascending frozen candidate_rank, then image_id",
+  "update": "baseline-anchored delta ridge",
+  "trust_lambda": 1000.0,
+  "calibration_guard_per_model": {
+    "unique_families_with_persistent_cliff_removed_min": 1,
+    "new_family_cliffs_max": 0,
+    "minimum_path_mean_risk_gain": 0.0,
+    "aggregate_mean_risk_gain_min": 0.05,
+    "failure_action": "leave the deployed head unchanged"
+  },
+  "confirmation_gates": {
+    "eligible_models_min": 3,
+    "unique_model_family_cliffs_removed_min": 2,
+    "new_model_family_cliffs_max": 0,
+    "models_with_a_removed_cliff_min": 2,
+    "seed_cluster_mean_risk_gain_ci95_lower_strictly_positive": true,
+    "mean_event_time_gain_strictly_positive": true
+  }
+}

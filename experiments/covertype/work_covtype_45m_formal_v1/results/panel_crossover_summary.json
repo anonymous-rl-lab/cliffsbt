@@ -1,0 +1,42 @@
+{
+  "posttarget_diagnostic": true,
+  "seed": 2026081541,
+  "summary": {
+    "fit_formal__eval_formal": {
+      "n": 12,
+      "hazard_spearman": 0.25874125874125875,
+      "distance_spearman": 0.18181818181818185,
+      "advantage": 0.0769230769230769,
+      "sign_accuracy": 0.9166666666666666,
+      "ascending_spearman": -0.028571428571428574,
+      "descending_spearman": 0.6
+    },
+    "fit_formal__eval_pilot": {
+      "n": 12,
+      "hazard_spearman": 0.8511396590310907,
+      "distance_spearman": 0.0665500144921429,
+      "advantage": 0.7845896445389478,
+      "sign_accuracy": 1.0,
+      "ascending_spearman": 0.5797710356524484,
+      "descending_spearman": 0.942857142857143
+    },
+    "fit_pilot__eval_formal": {
+      "n": 12,
+      "hazard_spearman": 0.7110343653634216,
+      "distance_spearman": 0.14010529366766927,
+      "advantage": 0.5709290716957522,
+      "sign_accuracy": 0.7272727272727273,
+      "ascending_spearman": 0.8116794499134279,
+      "descending_spearman": 0.942857142857143
+    },
+    "fit_pilot__eval_pilot": {
+      "n": 12,
+      "hazard_spearman": 0.8386016534578921,
+      "distance_spearman": -0.23158037292142628,
+      "advantage": 1.0701820263793183,
+      "sign_accuracy": 1.0,
+      "ascending_spearman": 0.8116794499134279,
+      "descending_spearman": 0.49280538030458115
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "config.json": "1a7eecc539169fc782a353657c17fc5c06cee1864d092306c038aa3b7ed0d492",
+    "accounting_config.json": "69c18cff36652158e44d12bb49130592dab01196e333ba517058362e54ffec7e",
+    "SCALED_ACCOUNTING_PROTOCOL.md": "97b6d8f5432f3862cdae2744d622a811b5fdc7837b78fdb8794a8ce780e960b7",
+    "run_boundary_flow.py": "45af7a3a3cc5d6c09631f74cf7cfccd7bf9617a5d5f1f0dabbaf8fa678cb1467",
+    "run_boundary_accounting.py": "94d806afe2c3f7077d112ccaf70b191450e05fabe50a7f7589f55fca0a7ae6b8",
+    "run_scaled_accounting.py": "4ae85be11e2e66c9867f40580653dc7a8977326f0534450ec0827dc914aa30e3",
+    "data/accounting_panels.npz": "2cb0d63f53f372d7e386e6171ef48ab1801b66473232d91132e66b90f65b9175",
+    "results/coherence_scale_diagnostic.json": "a9657b3884b0c95177291bfa230356136ca684f62e5205c4158022f8c52dbd9d"
+  },
+  "sha256": "a59b34074263916de1a3cf638c07ef29109e18d7b91ebec62994ccc8961f4294"
+}

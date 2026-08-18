@@ -1,0 +1,4 @@
+variant,method,observed_timely_rate_difference,timely_difference_p2_5,timely_difference_p97_5,observed_false_rate_difference,false_difference_p2_5,false_difference_p97_5,positive_seed_directions,zero_seed_directions,negative_seed_directions
+static_plus_net,Static + net prediction-state transport,0.125,0.04166666666666663,0.21333333333333337,0.0,0.0,0.0,4,1,0
+static_plus_persistence,Static + persistent departure,0.0,0.0,0.0,0.0,0.0,0.0,0,5,0
+current_state,Static + both proxy channels,0.11111111111111105,0.040000000000000036,0.20000000000000007,0.0,0.0,0.0,4,1,0

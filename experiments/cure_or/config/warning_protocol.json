@@ -1,0 +1,32 @@
+{
+  "protocol_version": "2.0",
+  "telemetry": {
+    "name": "Hybrid25",
+    "sensor_channels": 25,
+    "active_channels": 11,
+    "diagnostic_channels": 14,
+    "readout_inputs": 34,
+    "uses_confirmation_labels": false
+  },
+  "readout": {
+    "model_file": "config/hybrid25_warning_model_frozen.json",
+    "threshold": 0.87,
+    "persistence_windows": 1,
+    "earliest_alarm_window": 1,
+    "refit_on_new_models": false
+  },
+  "event": {
+    "risk_threshold": 0.5,
+    "definition": "earliest window at or above threshold with every later window also at or above threshold",
+    "timely_alarm": "first alarm strictly before event"
+  },
+  "confirmation_gates": {
+    "timely_rate_min": 0.75,
+    "false_alarm_rate_max": 0.20,
+    "median_lead_windows_min": 2.0,
+    "seeds_meeting_timely_floor_min": 4,
+    "per_seed_timely_floor": 0.60,
+    "seeds_meeting_false_ceiling_min": 4,
+    "per_seed_false_ceiling": 0.30
+  }
+}

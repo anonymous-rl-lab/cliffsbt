@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "experiment_name": "generalization_cliff_measurement_design_calibration_probe",
+  "output_tag": "measurement_design_probe",
+  "master_seed": 20260816,
+  "risk_surface": {
+    "type": "quadratic",
+    "mechanism_ball_radius": 0.08,
+    "remainder_buffer": 0.02
+  },
+  "target": {
+    "risk_margin_gamma": 0.04,
+    "rank_relative_tolerance": 0.03,
+    "null_ratio_threshold": 0.20
+  },
+  "measurement_design": {
+    "cost_definition": "number of scalar observation dimensions",
+    "budgets": [6, 12, 18, 27, 36, 54],
+    "target_accuracy": 0.90
+  },
+  "pilot_gates": {
+    "rich_max_null_ratio": 0.20,
+    "maximum_optimizer_constraint_error": 0.000001,
+    "minimum_support_slack": -0.0001
+  }
+}

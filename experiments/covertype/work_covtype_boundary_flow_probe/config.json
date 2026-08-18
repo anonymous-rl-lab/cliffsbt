@@ -1,0 +1,51 @@
+{
+  "experiment": "covtype_boundary_flow_smoke_v1",
+  "source": {
+    "data_home": "../sklearn_data",
+    "samples_sha256": "ba15c20add4a83550488f189a3c4b1d774167e84256d99844d5327f4174323ff",
+    "targets_sha256": "9c41047c16f75a49a2e6852913a504a653892a856ffe8698ba918901a550eee5"
+  },
+  "task": {
+    "labels": [1, 2],
+    "positive_label": 2,
+    "elevation_feature_index": 0
+  },
+  "windows": {
+    "width_m": 15,
+    "lower_inclusive_m": 2700,
+    "upper_exclusive_m": 3330,
+    "count": 42,
+    "fit_examples_per_class": 48,
+    "flow_examples_per_class": 48,
+    "selection_seed": 2026081501,
+    "exclude_prior_fixed_panel": true
+  },
+  "deployment": {
+    "directions": ["ascending", "descending"],
+    "origin_positions": [10, 22, 34],
+    "target_horizon_windows": 6
+  },
+  "model": {
+    "family": "sklearn_mlp",
+    "hidden_layer_sizes": [64, 64],
+    "alpha": 0.0001,
+    "learning_rate_init": 0.001,
+    "batch_size": 128,
+    "max_iter": 160,
+    "seed": 2026081511
+  },
+  "transport": {
+    "spaces": ["hidden", "raw_no_elevation"],
+    "class_conditioned": true,
+    "matching": "hungarian",
+    "epsilon_quantile_of_positive_training_margin": 0.2
+  },
+  "smoke_gate": {
+    "minimum_cases": 6,
+    "minimum_transition_sign_accuracy": 0.6,
+    "minimum_next_step_spearman": 0.35,
+    "minimum_flux_advantage_over_unsigned_distance_spearman": 0.1,
+    "minimum_late_nonincrease_explained_fraction": 0.6,
+    "require_hidden_and_raw_direction_agreement": true
+  }
+}

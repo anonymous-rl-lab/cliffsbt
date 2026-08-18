@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript and the archived software release."
+title: "Cliff SBT reproducibility repository"
+type: software
+version: 1.0.1-manuscript-v7
+authors:
+  - name: "SBT Reproducibility Contributors"
+license: Apache-2.0
+repository-code: "REPLACE_WITH_GITHUB_URL"
+abstract: "Lightweight code, compact evidence, figures and ledger tooling for signed boundary transport research."

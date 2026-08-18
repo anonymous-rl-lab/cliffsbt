@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "CURE-OR formation-warning-repair confirmatory experiment v2"
+message: "Please cite the c6ygf registration, the associated evidence records, and mini CURE-OR."
+type: software
+version: 2.0.0
+date-released: 2026-08-16
+references:
+  - type: dataset
+    title: "mini CURE-OR"
+    doi: 10.5281/zenodo.4299330
+    authors:
+      - family-names: Temel
+        given-names: Dogancan
+      - family-names: Lee
+        given-names: Jinsol
+      - family-names: AlRegib
+        given-names: Ghassan

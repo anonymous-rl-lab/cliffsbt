@@ -1,0 +1,17 @@
+{
+  "status": "post_hoc_committed_output_diagnostics",
+  "repo_root": "SOURCE_FULL_EVIDENCE_REPOSITORY",
+  "v6_diagnostics": "SOURCE_V6_DIAGNOSTICS",
+  "bootstrap_seed": 20260818,
+  "bootstrap_replicates": 20000,
+  "files": [
+    "V7_DIAGNOSTIC_ADDENDUM.md",
+    "trained_peer_boundary_by_seed.csv",
+    "warning_false_budget_sensitivity.csv",
+    "warning_nested_channel_by_seed.csv",
+    "warning_nested_channel_path_discordance.csv",
+    "warning_nested_channel_path_rows.csv",
+    "warning_nested_channel_seed_cluster_ranges.csv",
+    "warning_nested_channel_summary.csv"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "protocol_version": "2.0",
+  "registration": "https://osf.io/c6ygf",
+  "phase1_project_file": "https://osf.io/nm3ex/files/x8vmb",
+  "phase2_evidence": "https://osf.io/nj3hp",
+  "osf_registration_archive": "CURE_OR_OSF_REREGISTRATION_v2.zip",
+  "osf_registration_archive_sha256": "bfd7c75502f943420ce735805df878367de14c3b3c47c551f23e567587d58353",
+  "osf_registration_manifest_sha256": "8b58b4ffeebfe8b8bc04b7c61d97795c9828dafa157f7e58ac0eb145be02c35d",
+  "phase1_archive": "CURE_OR_OSF_PHASE1_BLIND_EVIDENCE_c6ygf_v2.zip",
+  "phase1_archive_sha256": "a883b29fecfc0ab26d3338373a3ddd080782e2ce7dff911e40de5f18a60f955a",
+  "phase1_blind_commit_sha256": "4a888493531dfa797efa765adc2057e73564eacc59a9e42c86b8ef2b27c1b237",
+  "phase2_archive": "CURE_OR_OSF_PHASE2_CONFIRMATORY_EVIDENCE_c6ygf_x8vmb_v2.zip",
+  "phase2_archive_sha256": "7287ccf37bc1d2dd191d59601614d052b35c1830d49d3ef693e36149fd9a9e60",
+  "phase1_confirmation_labels_scored": false,
+  "phase2_executed": true,
+  "overall_decision": "FORMATION_WARNING_REPAIR_CONFIRMED",
+  "execution_date": "2026-08-17",
+  "execution_timezone": "Asia/Singapore"
+}

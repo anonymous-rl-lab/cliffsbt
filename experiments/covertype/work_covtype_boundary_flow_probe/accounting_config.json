@@ -1,0 +1,25 @@
+{
+  "experiment": "covtype_signed_boundary_accounting_probe_v1",
+  "panel": {
+    "fit_examples_per_class": 48,
+    "flow_examples_per_class": 256,
+    "selection_seed": 2026081502,
+    "exclude_original_source_smoke_panel": true
+  },
+  "model": {
+    "seed": 2026081511
+  },
+  "boundary": {
+    "epsilon_quantile_of_absolute_training_margin": 0.2,
+    "placebo_permutations": 128,
+    "placebo_seed": 2026081591
+  },
+  "gate": {
+    "minimum_velocity_split_cosine": 0.5,
+    "minimum_sign_accuracy": 0.65,
+    "minimum_hazard_spearman": 0.5,
+    "minimum_advantage_over_unsigned_distance": 0.2,
+    "minimum_late_nonincrease_explained_fraction": 0.6,
+    "true_boundary_must_exceed_placebo_q95": true
+  }
+}

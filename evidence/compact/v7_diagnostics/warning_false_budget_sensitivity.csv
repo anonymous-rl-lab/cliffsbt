@@ -1,0 +1,26 @@
+kind,method,false_budget,threshold,cal_timely,cal_false,cal_cliffs,cal_controls,cal_median_lead,conf_timely,conf_false,conf_cliffs,conf_controls,conf_median_lead
+static_state,Static current telemetry,0.05,0.9033584596227976,27,3,69,81,3.0,20,0,72,78,2.0
+static_state,Static current telemetry,0.075,0.5060936964466982,61,6,69,81,5.0,62,3,72,78,3.0
+static_state,Static current telemetry,0.1,0.5060936964466982,61,6,69,81,5.0,62,3,72,78,3.0
+static_state,Static current telemetry,0.15,0.5044305067009063,62,9,69,81,5.0,62,3,72,78,3.0
+static_state,Static current telemetry,0.2,0.5044305067009063,62,9,69,81,5.0,62,3,72,78,3.0
+static_plus_net,Static + net prediction-state transport,0.05,0.9461518685180726,28,4,69,81,4.0,31,1,72,78,4.0
+static_plus_net,Static + net prediction-state transport,0.075,0.6480904805446769,59,6,69,81,5.0,71,3,72,78,3.0
+static_plus_net,Static + net prediction-state transport,0.1,0.6053770831920671,61,7,69,81,5.0,72,3,72,78,3.0
+static_plus_net,Static + net prediction-state transport,0.15,0.5368118183015308,62,9,69,81,5.0,72,5,72,78,3.0
+static_plus_net,Static + net prediction-state transport,0.2,0.5368118183015308,62,9,69,81,5.0,72,5,72,78,3.0
+static_plus_persistence,Static + persistent departure,0.05,0.9079350285537198,26,3,69,81,3.0,20,0,72,78,2.0
+static_plus_persistence,Static + persistent departure,0.075,0.5120582410812492,61,6,69,81,5.0,62,3,72,78,3.0
+static_plus_persistence,Static + persistent departure,0.1,0.5073001116097506,62,8,69,81,5.0,62,3,72,78,3.0
+static_plus_persistence,Static + persistent departure,0.15,0.5073001116097506,62,8,69,81,5.0,62,3,72,78,3.0
+static_plus_persistence,Static + persistent departure,0.2,0.5073001116097506,62,8,69,81,5.0,62,3,72,78,3.0
+current_state,Static + both proxy channels,0.05,0.9458895548215145,28,4,69,81,4.0,32,1,72,78,3.5
+current_state,Static + both proxy channels,0.075,0.651571067140003,59,6,69,81,5.0,70,3,72,78,3.0
+current_state,Static + both proxy channels,0.1,0.606213470246348,61,7,69,81,5.0,72,3,72,78,3.0
+current_state,Static + both proxy channels,0.15,0.5152321141178354,62,12,69,81,5.0,72,6,72,78,3.0
+current_state,Static + both proxy channels,0.2,0.5152321141178354,62,12,69,81,5.0,72,6,72,78,3.0
+full34,Full temporal chart,0.05,0.9392142403184364,46,4,69,81,5.0,36,0,72,78,3.0
+full34,Full temporal chart,0.075,0.7157571471261248,58,6,69,81,5.0,61,1,72,78,3.0
+full34,Full temporal chart,0.1,0.5109458425753247,60,8,69,81,5.0,70,3,72,78,3.0
+full34,Full temporal chart,0.15,0.48181602927100425,61,10,69,81,5.0,70,3,72,78,3.0
+full34,Full temporal chart,0.2,0.48181602927100425,61,10,69,81,5.0,70,3,72,78,3.0

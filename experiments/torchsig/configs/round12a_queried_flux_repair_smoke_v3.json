@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "experiment_name": "round12a_queried_signed_flux_repair_smoke_v3",
+  "output_tag": "round12a_queried_flux_repair_smoke_v3",
+  "study_stage": "fresh_single_seed_queried_repair_smoke",
+  "source_round10_config": "configs/formal_round10_training_intervention_v1.json",
+  "master_seed": 20261203,
+  "replicate_seed": 20261231,
+  "arms": ["baseline", "random", "uncertainty", "queried_flux", "oracle_u"],
+  "training_override": {
+    "samples_per_class": 80,
+    "n_estimators": 80,
+    "min_samples_leaf": 2,
+    "n_jobs": 1
+  },
+  "repair": {
+    "fraction": 0.05,
+    "query_fraction": 0.20,
+    "confirmation_windows": 2,
+    "query_stratify_by_anchor_predicted_class": true,
+    "repair_stratify_by_queried_true_class": true,
+    "oracle_tube_jitter_std": 0.02,
+    "oracle_clip_low": -1.0,
+    "oracle_clip_high": 1.0
+  },
+  "acquisition": {
+    "master_seed": 2026120301,
+    "samples_per_path": 192
+  },
+  "evaluation": {
+    "master_seed": 2026120302,
+    "samples_per_path": 256,
+    "relative_cliff_margin": 0.04
+  },
+  "validation": {
+    "samples_per_class": 100
+  },
+  "smoke_gates": {
+    "minimum_baseline_common_cliff_fraction": 0.50,
+    "minimum_queried_flux_selector_incident_precision": 0.50,
+    "minimum_queried_flux_selector_precision_advantage_over_random": 0.20,
+    "minimum_queried_flux_mean_end_risk_reduction": 0.02,
+    "minimum_queried_flux_mean_incident_reduction": 0.01,
+    "minimum_queried_flux_end_risk_advantage_over_random": 0.00,
+    "minimum_queried_flux_end_risk_advantage_over_uncertainty": 0.00,
+    "maximum_queried_flux_validation_accuracy_loss": 0.02,
+    "maximum_queried_flux_mean_anchor_risk_increase": 0.02,
+    "minimum_oracle_u_mean_end_risk_reduction": 0.05
+  },
+  "decision_rule": "A complete fresh v3 smoke pass licenses a separately frozen fresh multi-seed pilot. Prior stopped smokes remain stopped."
+}
+

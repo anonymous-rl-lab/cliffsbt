@@ -1,0 +1,57 @@
+{
+  "experiment": "covtype_45m_signed_boundary_formal_v1",
+  "source": {
+    "data_home": "../sklearn_data",
+    "samples_sha256": "ba15c20add4a83550488f189a3c4b1d774167e84256d99844d5327f4174323ff",
+    "targets_sha256": "9c41047c16f75a49a2e6852913a504a653892a856ffe8698ba918901a550eee5"
+  },
+  "task": {
+    "labels": [1, 2],
+    "positive_label": 2,
+    "elevation_feature_index": 0
+  },
+  "blocks": {
+    "width_m": 45,
+    "lower_inclusive_m": 2745,
+    "upper_exclusive_m": 3330,
+    "count": 13,
+    "fit_examples_per_class": 96,
+    "evaluation_examples_per_class": 256,
+    "evaluation_from_block": 0,
+    "selection_seed": 2026081602
+  },
+  "deployment": {
+    "directions": ["ascending", "descending"],
+    "origin_blocks": [3, 7, 10],
+    "target_horizon_blocks": 3
+  },
+  "model": {
+    "family": "sklearn_mlp",
+    "hidden_layer_sizes": [64, 64],
+    "alpha": 0.0001,
+    "learning_rate_init": 0.001,
+    "batch_size": 128,
+    "max_iter": 160,
+    "seeds": [2026081531, 2026081532, 2026081533, 2026081534, 2026081535]
+  },
+  "boundary": {
+    "epsilon_quantile_of_absolute_training_margin": 0.2,
+    "placebo_permutations": 128,
+    "placebo_seed": 2026081693
+  },
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 2026081694
+  },
+  "gate": {
+    "minimum_error_spearman": 0.5,
+    "minimum_brier_spearman": 0.5,
+    "minimum_sign_accuracy": 0.75,
+    "minimum_advantage_over_unsigned_distance": 0.1,
+    "minimum_sources_with_sign_accuracy_at_least_0_6": 4,
+    "require_both_direction_correlations_positive": true,
+    "require_true_boundary_above_placebo_q95": true,
+    "require_two_way_bootstrap_hazard_lower_above_zero": true,
+    "require_two_way_bootstrap_advantage_lower_above_zero": true
+  }
+}

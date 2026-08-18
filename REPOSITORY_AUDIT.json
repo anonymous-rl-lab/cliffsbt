@@ -1,0 +1,55 @@
+{
+  "package": "cliff-sbt-repro",
+  "version": "1.0.1-manuscript-v7",
+  "source_archives": {
+    "full_evidence": {
+      "sha256": "751e2b1f5a10e6bd1201087475742cd338f6e4f647030db2ab83af33ab8c73e5",
+      "size_bytes": 151026589
+    },
+    "paper_v7": {
+      "sha256": "169ab40834440659eebaba1af657333d0c79eef57d3bc7d223a513a6dad4f142",
+      "size_bytes": 3389822
+    },
+    "sbt_monitor_source": {
+      "sha256": "21abee3adb68d803ab2860c0bff355115ad19a7d7b1603265750683eb4a43104",
+      "size_bytes": 59527
+    }
+  },
+  "checks": {
+    "compact_claim_checks": {
+      "passed": 25,
+      "total": 25
+    },
+    "sbt_monitor_tests": {
+      "passed": 21,
+      "total": 21
+    },
+    "figure_generation": {
+      "created_png": 11,
+      "created_pdf": 11
+    },
+    "git_manifest_tracking": "PASS",
+    "repository_audit": "PASS",
+    "python_compile": "PASS",
+    "github_actions_matrix": {
+      "python_versions": [
+        "3.10",
+        "3.12"
+      ],
+      "fail_fast": false
+    }
+  },
+  "ci_fix": {
+    "root_cause": "PHASE1_EXECUTION.log was listed in MANIFEST.sha256 but omitted by the original *.log ignore rule during git add.",
+    "tracked_exception": "experiments/cure_or/audit/PHASE1_EXECUTION.log",
+    "python_3_12_screenshot_status": "cancelled_by_matrix_fail_fast_not_an_independent_failure",
+    "preflight_script": "reproduce/preflight_git_tracking.py"
+  },
+  "scientific_scope": {
+    "pretrained_universal_warning_readout_included": false,
+    "large_source_data_included": false,
+    "full_evidence_hash_bridge_included": true,
+    "post_hoc_diagnostics_labelled": true
+  },
+  "tree_size_bytes_before_zip": 8562987
+}

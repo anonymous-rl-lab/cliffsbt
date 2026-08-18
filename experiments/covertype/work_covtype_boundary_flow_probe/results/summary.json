@@ -1,0 +1,39 @@
+{
+  "pretarget_sha256": "007539c72a4d70c41017ec613c04a31531a4156a08ace9df32bf402c5283c5f9",
+  "cases": 6,
+  "forecasts": 60,
+  "metrics": {
+    "hidden": {
+      "n_forecasts": 30,
+      "n_nonzero": 29,
+      "sign_accuracy_nonzero": 0.6896551724137931,
+      "next_step_spearman_flux": 0.45186645215828086,
+      "next_step_spearman_unsigned_distance_delta": -0.15006127232252742,
+      "flux_advantage": 0.6019277244808083,
+      "late_nonincrease_n": 7,
+      "late_nonincrease_explained_fraction": 0.0
+    },
+    "raw_no_elevation": {
+      "n_forecasts": 30,
+      "n_nonzero": 29,
+      "sign_accuracy_nonzero": 0.6551724137931034,
+      "next_step_spearman_flux": 0.2667492135875689,
+      "next_step_spearman_unsigned_distance_delta": 0.06144942308756316,
+      "flux_advantage": 0.20529979050000577,
+      "late_nonincrease_n": 7,
+      "late_nonincrease_explained_fraction": 0.0
+    }
+  },
+  "checks": {
+    "hidden_sign": true,
+    "hidden_rho": true,
+    "hidden_advantage": true,
+    "hidden_late": false,
+    "raw_no_elevation_sign": true,
+    "raw_no_elevation_rho": false,
+    "raw_no_elevation_advantage": true,
+    "raw_no_elevation_late": false,
+    "space_sign_agreement": true
+  },
+  "decision": "STOP_OR_REDESIGN"
+}

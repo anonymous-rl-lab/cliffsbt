@@ -1,0 +1,29 @@
+name: ci
+on:
+  push:
+  pull_request:
+
+env:
+  MPLBACKEND: Agg
+
+jobs:
+  compact-reproduction:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Verify manifest files are tracked by Git
+        run: python reproduce/preflight_git_tracking.py --require-git
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -r requirements-lite.txt
+      - run: python -m pip install -e "tooling/sbt-monitor[warning]"
+      - run: python reproduce/verify_compact_evidence.py
+      - run: python -m pytest tooling/sbt-monitor/tests -q
+      - run: python reproduce/make_figures.py --evidence-dir evidence/compact --out-dir /tmp/cliff-figures
+      - run: python reproduce/audit_repository.py --strict

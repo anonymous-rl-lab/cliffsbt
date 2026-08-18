@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "experiment_name": "round12b_counterfactual_repair_influence_smoke",
+  "output_tag": "round12b_influence_repair_smoke",
+  "study_stage": "fresh_single_seed_influence_smoke",
+  "source_round10_config": "configs/formal_round10_training_intervention_v1.json",
+  "master_seed": 20261205,
+  "replicate_seed": 20261251,
+  "arms": ["baseline", "random", "uncertainty", "queried_flux", "influence_flux", "oracle_u"],
+  "training_override": {
+    "samples_per_class": 80,
+    "n_estimators": 80,
+    "min_samples_leaf": 2,
+    "n_jobs": 1
+  },
+  "repair": {
+    "fraction": 0.05,
+    "query_fraction": 0.20,
+    "confirmation_windows": 2,
+    "oracle_tube_jitter_std": 0.02,
+    "oracle_clip_low": -1.0,
+    "oracle_clip_high": 1.0
+  },
+  "acquisition": {
+    "master_seed": 2026120501,
+    "samples_per_path": 192
+  },
+  "screening": {
+    "master_seed": 2026120502,
+    "samples_per_path": 128,
+    "objective_weights": {
+      "end_risk": 0.4,
+      "incident_crossing_fraction_all": 0.4,
+      "risk_area": 0.2
+    }
+  },
+  "evaluation": {
+    "master_seed": 2026120503,
+    "samples_per_path": 256,
+    "relative_cliff_margin": 0.04
+  },
+  "validation": {
+    "samples_per_class": 100
+  },
+  "smoke_gates": {
+    "minimum_baseline_common_cliff_fraction": 0.50,
+    "minimum_influence_flux_mean_end_risk_reduction": 0.02,
+    "minimum_influence_flux_mean_incident_reduction": 0.01,
+    "minimum_influence_flux_end_risk_advantage_over_random": 0.00,
+    "minimum_influence_flux_end_risk_advantage_over_uncertainty": 0.00,
+    "minimum_influence_flux_end_risk_advantage_over_queried_flux": 0.00,
+    "maximum_influence_flux_validation_accuracy_loss": 0.02,
+    "maximum_influence_flux_mean_anchor_risk_increase": 0.02,
+    "minimum_oracle_u_mean_end_risk_reduction": 0.05
+  },
+  "decision_rule": "A complete Round 12B smoke pass licenses a separately frozen fresh multi-seed pilot."
+}
+

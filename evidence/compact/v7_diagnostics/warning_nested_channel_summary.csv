@@ -1,0 +1,6 @@
+kind,method,threshold,cal_timely,cal_cliffs,cal_false,cal_controls,cal_median_lead,conf_timely,conf_cliffs,conf_false,conf_controls,conf_median_lead
+static_state,Static current telemetry,0.5076338734394464,61,69,6,81,5.0,62,72,3,78,3.0
+static_plus_net,Static + net prediction-state transport,0.6488271586722439,59,69,6,81,5.0,71,72,3,78,3.0
+static_plus_persistence,Static + persistent departure,0.5149475854899722,61,69,6,81,5.0,62,72,3,78,3.0
+current_state,Static + both proxy channels,0.6522391565956982,59,69,6,81,5.0,70,72,3,78,3.0
+full34,Full temporal chart,0.7171356971578035,58,69,6,81,5.0,61,72,1,78,3.0

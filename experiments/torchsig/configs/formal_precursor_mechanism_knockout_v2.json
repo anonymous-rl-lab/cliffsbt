@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "experiment_name": "generalization_cliff_formal_precursor_mechanism_knockout_v2",
+  "output_tag": "formal_precursor_mechanism_knockout_v2",
+  "source_run": "formal_precursor_source_v2_robust_directions",
+  "analysis_seed": 20260829,
+  "method": "compressed_current",
+  "history_windows": 6,
+  "forecast_horizon": 5,
+  "shuffle_draws_per_replicate": 240,
+  "bootstrap_draws": 10000,
+  "bootstrap_confidence": 0.95,
+  "matched_design": {
+    "evaluation_start_time": 5,
+    "preserve_terminal_pre_crossing_state": true,
+    "preserve_state_multiset": true,
+    "shared_revealed_future": true,
+    "primary_window": "the five windows immediately preceding the independently revealed crossing",
+    "sudden_jump_proxy": "matched stationary-safe telemetry scored against the event crossing time"
+  },
+  "probe_gates": {
+    "minimum_mean_integrated_slope_difference": 0.003,
+    "minimum_mean_integrated_forecast_difference": 0.02,
+    "minimum_pair_superiority_rate": 0.90,
+    "minimum_positive_slope_fraction_difference": 0.20,
+    "minimum_any_window_alarm_rate_difference": 0.15,
+    "maximum_sudden_jump_proxy_pre_warning_rate": 0.10,
+    "require_all_direction_forecast_differences_positive": true,
+    "require_bootstrap_lower_bound_positive": true
+  },
+  "semantics": {
+    "ordered": "new-seed telemetry in the original persistent degradation order",
+    "shuffled": "the identical pre-crossing telemetry multiset with the terminal state fixed and all earlier windows permuted",
+    "sudden_jump_proxy": "new-seed stationary-safe prehistory paired with the independently revealed event crossing time",
+    "scope": "independent new-seed confirmation over two calibration-feasible directions; phase-axis geometry failure is retained separately"
+  }
+}

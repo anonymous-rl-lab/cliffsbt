@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "experiment_name": "round11b_persistent_distributed_boundary_flux_fresh_probe",
+  "output_tag": "round11b_distributed_flux_probe",
+  "study_stage": "fresh_seed_redesign_probe",
+  "master_seed": 20261102,
+  "runtime": "torchsig_2.1.1_numpy_smoke_compatibility",
+  "source_round10_config": "configs/formal_round10_training_intervention_v1.json",
+  "regimes": ["baseline", "cliff_aware"],
+  "replicate_seeds": [20261121, 20261122, 20261123],
+  "training_override": {
+    "samples_per_class": 120,
+    "n_estimators": 100,
+    "min_samples_leaf": 2,
+    "n_jobs": 1
+  },
+  "paired_deployment": {
+    "samples_per_path": 320,
+    "confirmation_windows": 2,
+    "velocity_shuffle_draws": 256,
+    "random_boundary_draws": 256,
+    "relative_cliff_margin": 0.04
+  },
+  "fresh_probe_gates": {
+    "maximum_flux_accounting_error": 1e-12,
+    "minimum_baseline_relative_cliff_fraction": 0.80,
+    "minimum_median_incident_persistence": 0.85,
+    "minimum_median_first_crossing_entropy": 0.65,
+    "maximum_median_three_window_incident_share": 0.65,
+    "maximum_velocity_coupling_pair_fraction": 0.25,
+    "minimum_true_boundary_specific_pair_fraction": 0.67,
+    "minimum_mean_cliff_aware_end_risk_reduction": 0.15,
+    "minimum_mean_cliff_aware_incident_crossing_reduction": 0.08
+  },
+  "decision_rule": "This fresh-seed redesign may support the distributed-flux replacement hypothesis, but compatibility-runtime success still requires a standard TorchSig pilot before any manuscript claim"
+}

@@ -1,0 +1,12 @@
+{
+  "files": {
+    "work_covtype_45m_multiseed_pilot/config.json": "fb9b8aac792bb39cd5f975e1d1484b64aa586336f6c3b8b57c361e194848f5b2",
+    "work_covtype_45m_multiseed_pilot/PROTOCOL.md": "970b76b9789f65a1f91416537c295f292fe48fde9b92f98c56aa64990daf4238",
+    "work_covtype_45m_multiseed_pilot/run_pilot.py": "dadb986052bec8121235ba1e1d8259b25c08b393ea41ad541447fec759b0411b",
+    "work_covtype_45m_multiseed_pilot/data/known_used_indices.npy": "11aef937e6be96cf24254309bb543f277773a99f1e496af87f269a5499b37148",
+    "work_covtype_45m_multiseed_pilot/data/block_panels.npz": "ce5cbf487bfb9d281a26bc9b0c19cf9c911f4f846a8649759bc029381f3256cf",
+    "work_covtype_45m_multiseed_pilot/data/panel_audit.json": "dd6454deb785ef05f088ce585e405af10a6894362cb46f3e08c8fd90b42b4423",
+    "work_covtype_boundary_flow_probe/run_boundary_flow.py": "45af7a3a3cc5d6c09631f74cf7cfccd7bf9617a5d5f1f0dabbaf8fa678cb1467"
+  },
+  "sha256": "0e4ad5ba865739c64978221cf73e541227bf59cc777643afef69d3461971887f"
+}

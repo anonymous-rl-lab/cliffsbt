@@ -1,0 +1,47 @@
+{
+  "pretarget_sha256": "ee449031ed004279277e2fdd52781e859fd5be9b92543e07c0d78a55a6bbed92",
+  "models": 30,
+  "transitions": 60,
+  "error_spearman": 0.39991110683616826,
+  "brier_spearman": 0.45106974159488755,
+  "sign_accuracy": 0.7241379310344828,
+  "unsigned_distance_spearman": 0.3485598961627532,
+  "hazard_advantage": 0.05135121067341508,
+  "normal_speed_spearman": 0.42921493794054266,
+  "source_sign_accuracy": {
+    "ascending_10": 0.5555555555555556,
+    "ascending_3": 0.7,
+    "ascending_7": 0.5,
+    "descending_10": 0.9,
+    "descending_3": 0.8888888888888888,
+    "descending_7": 0.8
+  },
+  "direction_spearman": {
+    "ascending": 0.11109877579961602,
+    "descending": 0.6574586374762956
+  },
+  "placebo_median_spearman": 0.004295485678961902,
+  "placebo_q95_spearman": 0.19355541876891239,
+  "two_way_bootstrap_hazard_ci": [
+    -0.23484644091203527,
+    0.4157111280140917,
+    0.8248559942642154
+  ],
+  "two_way_bootstrap_advantage_ci": [
+    -0.7041609984576647,
+    0.07153508649207603,
+    0.678927111955462
+  ],
+  "checks": {
+    "error_spearman": false,
+    "brier_spearman": false,
+    "sign_accuracy": false,
+    "advantage": false,
+    "source_replication": true,
+    "direction_replication": true,
+    "placebo": true,
+    "bootstrap_hazard": false,
+    "bootstrap_advantage": false
+  },
+  "decision": "FORMAL_STOP"
+}

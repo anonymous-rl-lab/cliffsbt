@@ -1,0 +1,5 @@
+{
+  "schedule_seed": "cure-or-osf-reregistration-v2-schedule",
+  "prospective_schedule_ids": [211, 223, 227],
+  "evaluated_on_prospective_model_outputs_before_registration": false
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "experiment_name": "generalization_cliff_torchsig_frozen_identified_validation",
+  "output_tag": "formal_identified",
+  "channels": ["rich"],
+  "master_seed": 20260814,
+  "torchsig_version": "2.1.1",
+  "classes": ["bpsk", "qpsk", "8psk", "16qam"],
+  "signal": {
+    "sample_rate": 1.0,
+    "bandwidth": 0.25,
+    "num_iq_samples": 512,
+    "pulse_shape": "srrc",
+    "alpha_rolloff": 0.35
+  },
+  "mechanism_map": {
+    "snr_db": "18 - 8 * theta_noise",
+    "phase_noise_degrees": "6 + 6 * theta_phase",
+    "amplifier_psat_backoff": "4 * exp(-0.8 * theta_nonlinearity)"
+  },
+  "training": {
+    "samples_per_class": 500,
+    "theta_low": -0.8,
+    "theta_high": -0.4,
+    "n_estimators": 240,
+    "min_samples_leaf": 2
+  },
+  "calibration": {
+    "theta_center": [0.75, 0.30, 0.0],
+    "theta_offset_levels": [-0.12, -0.06, 0.0, 0.06, 0.12],
+    "samples_per_environment": 96,
+    "covariance_shrinkage": "LedoitWolf",
+    "boundary_definition": "center-environment deployment error"
+  },
+  "target": {
+    "risk_margin_gamma": 0.04,
+    "batch_sizes": [8, 16, 32, 64, 128],
+    "replicates_per_state": 200,
+    "reveal_samples_per_state": 5000,
+    "rank_relative_tolerance": 0.03,
+    "null_ratio_threshold": 0.20
+  },
+  "pilot_gates": {
+    "minimum_calibration_risk_range": 0.08,
+    "minimum_risk_linear_r2": 0.85,
+    "minimum_relevant_score_linear_r2": 0.95,
+    "rich_max_null_ratio": 0.20,
+    "rich_max_theory_empirical_mae": 0.07,
+    "rich_min_theory_empirical_spearman": 0.85,
+    "minimum_actual_margin_ratio": 0.50
+  }
+}

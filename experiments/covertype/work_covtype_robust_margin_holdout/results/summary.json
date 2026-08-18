@@ -1,0 +1,53 @@
+{
+  "pretarget_sha256": "a015c3c36fccb92e8c81c9d846e5f3a16d6c3614321139e3fc326b9b13b69aad",
+  "models": 30,
+  "transitions": 60,
+  "median_error_spearman": 0.7464420693750162,
+  "mean_error_spearman": 0.4319455971924031,
+  "trimmed_error_spearman": 0.6742748700502803,
+  "unsigned_distance_spearman": -0.02900047115170645,
+  "sign_accuracy": 0.7666666666666667,
+  "direction_spearman": {
+    "ascending": 0.7787712996260722,
+    "descending": 0.7455126986470322
+  },
+  "source_sign_accuracy": {
+    "ascending_10": 0.8,
+    "ascending_3": 0.9,
+    "ascending_7": 0.7,
+    "descending_10": 0.6,
+    "descending_3": 0.8,
+    "descending_7": 0.8
+  },
+  "median_brier_spearman": 0.8208391219783275,
+  "placebo_median": 0.04832947999514227,
+  "placebo_q95": 0.2693036074454337,
+  "two_way_bootstrap_median_ci": [
+    0.4845310140088978,
+    0.7406617164075959,
+    0.8789633813398195
+  ],
+  "two_way_bootstrap_mean_advantage_ci": [
+    -0.05224851014207342,
+    0.2843605649549058,
+    0.678236136698647
+  ],
+  "two_way_bootstrap_distance_advantage_ci": [
+    0.36031662095987893,
+    0.7928046593610953,
+    1.1838133107252573
+  ],
+  "checks": {
+    "median_error_spearman": true,
+    "sign_accuracy": true,
+    "direction_replication": true,
+    "advantage_over_mean": true,
+    "advantage_over_distance": true,
+    "source_replication": true,
+    "placebo": true,
+    "bootstrap_median": true,
+    "bootstrap_mean_advantage": false,
+    "bootstrap_distance_advantage": true
+  },
+  "decision": "FRESH_HOLDOUT_STOP"
+}

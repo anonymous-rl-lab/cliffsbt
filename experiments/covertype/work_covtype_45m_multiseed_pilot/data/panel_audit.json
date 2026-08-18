@@ -1,0 +1,236 @@
+[
+  {
+    "block": 0,
+    "lower_m": 2745,
+    "upper_m": 2790,
+    "class": 0,
+    "available_after_exclusion": 664,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 0,
+    "lower_m": 2745,
+    "upper_m": 2790,
+    "class": 1,
+    "available_after_exclusion": 15170,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 1,
+    "lower_m": 2790,
+    "upper_m": 2835,
+    "class": 0,
+    "available_after_exclusion": 1967,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 1,
+    "lower_m": 2790,
+    "upper_m": 2835,
+    "class": 1,
+    "available_after_exclusion": 15811,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 2,
+    "lower_m": 2835,
+    "upper_m": 2880,
+    "class": 0,
+    "available_after_exclusion": 3061,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 2,
+    "lower_m": 2835,
+    "upper_m": 2880,
+    "class": 1,
+    "available_after_exclusion": 19079,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 3,
+    "lower_m": 2880,
+    "upper_m": 2925,
+    "class": 0,
+    "available_after_exclusion": 4119,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 3,
+    "lower_m": 2880,
+    "upper_m": 2925,
+    "class": 1,
+    "available_after_exclusion": 24723,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 4,
+    "lower_m": 2925,
+    "upper_m": 2970,
+    "class": 0,
+    "available_after_exclusion": 8710,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 4,
+    "lower_m": 2925,
+    "upper_m": 2970,
+    "class": 1,
+    "available_after_exclusion": 30034,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 5,
+    "lower_m": 2970,
+    "upper_m": 3015,
+    "class": 0,
+    "available_after_exclusion": 12412,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 5,
+    "lower_m": 2970,
+    "upper_m": 3015,
+    "class": 1,
+    "available_after_exclusion": 28591,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 6,
+    "lower_m": 3015,
+    "upper_m": 3060,
+    "class": 0,
+    "available_after_exclusion": 15544,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 6,
+    "lower_m": 3015,
+    "upper_m": 3060,
+    "class": 1,
+    "available_after_exclusion": 21077,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 7,
+    "lower_m": 3060,
+    "upper_m": 3105,
+    "class": 0,
+    "available_after_exclusion": 18950,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 7,
+    "lower_m": 3060,
+    "upper_m": 3105,
+    "class": 1,
+    "available_after_exclusion": 14420,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 8,
+    "lower_m": 3105,
+    "upper_m": 3150,
+    "class": 0,
+    "available_after_exclusion": 21536,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 8,
+    "lower_m": 3105,
+    "upper_m": 3150,
+    "class": 1,
+    "available_after_exclusion": 12013,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 9,
+    "lower_m": 3150,
+    "upper_m": 3195,
+    "class": 0,
+    "available_after_exclusion": 23833,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 9,
+    "lower_m": 3150,
+    "upper_m": 3195,
+    "class": 1,
+    "available_after_exclusion": 9759,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 10,
+    "lower_m": 3195,
+    "upper_m": 3240,
+    "class": 0,
+    "available_after_exclusion": 25315,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 10,
+    "lower_m": 3195,
+    "upper_m": 3240,
+    "class": 1,
+    "available_after_exclusion": 7018,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 11,
+    "lower_m": 3240,
+    "upper_m": 3285,
+    "class": 0,
+    "available_after_exclusion": 19015,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 11,
+    "lower_m": 3240,
+    "upper_m": 3285,
+    "class": 1,
+    "available_after_exclusion": 5528,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 12,
+    "lower_m": 3285,
+    "upper_m": 3330,
+    "class": 0,
+    "available_after_exclusion": 11180,
+    "fit": 96,
+    "evaluation": 128
+  },
+  {
+    "block": 12,
+    "lower_m": 3285,
+    "upper_m": 3330,
+    "class": 1,
+    "available_after_exclusion": 1615,
+    "fit": 96,
+    "evaluation": 128
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "endpoint_overshoot": [
+    0.12,
+    0.38
+  ],
+  "endpoint_delta": [
+    0.26,
+    0.52
+  ],
+  "initial_headroom": [
+    0.14,
+    0.14
+  ],
+  "event": [
+    3.0,
+    7.0
+  ],
+  "last_pre_event_headroom": [
+    0.03333333333333321,
+    0.06
+  ],
+  "pre_event_slope": [
+    0.01999999999999999,
+    0.05000000000000002
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "all_pass": true,
+  "checks": {
+    "all_phase1_files_present": true,
+    "all_phase2_files_present": true,
+    "blind_commit_fingerprint": true,
+    "blind_commit_pass": true,
+    "blind_manifest_valid": true,
+    "evidence_manifest_valid": true,
+    "h1_pass": true,
+    "h2_pass": true,
+    "h3_pass": true,
+    "overall_decision": true,
+    "package_audit_pass": true,
+    "phase1_archive_binding": true,
+    "phase1_declared_outcome_blind": true,
+    "phase_order_pass": true,
+    "postreveal_manifest_valid": true,
+    "registered_manifest_binding": true
+  },
+  "checks_passed": 16,
+  "checks_total": 16,
+  "overall_decision": "FORMATION_WARNING_REPAIR_CONFIRMED",
+  "phase1_project_file": "https://osf.io/nm3ex/files/x8vmb",
+  "protocol_version": "2.0",
+  "registration": "https://osf.io/c6ygf"
+}

@@ -1,0 +1,20 @@
+{
+  "protocol_version": "2.0",
+  "dataset": "mini CURE-OR",
+  "dataset_doi": "10.5281/zenodo.4299330",
+  "target_families": [2, 6, 11, 12, 13, 14, 15, 16, 17, 18],
+  "model_seeds": [113, 127, 139, 151, 163],
+  "schedule_ids": [211, 223, 227],
+  "windows": 13,
+  "operational_batch_identities": 50,
+  "calibration_identities": 50,
+  "risk_threshold": 0.5,
+  "bootstrap": {
+    "unit": "model_seed",
+    "replicates": 20000,
+    "rng_seed": 21313,
+    "interval": [0.025, 0.975]
+  },
+  "prospective_unit": "registered classifier-head model seed evaluated on frozen schedule variants",
+  "independence_boundary": "same public CURE-OR benchmark; not a fresh-identity, cross-dataset, or cross-domain replication"
+}

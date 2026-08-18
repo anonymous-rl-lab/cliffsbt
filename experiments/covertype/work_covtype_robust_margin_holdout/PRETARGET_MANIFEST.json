@@ -1,0 +1,14 @@
+{
+  "files": {
+    "work_covtype_robust_margin_holdout/config.json": "7ab6204560c6c06c2b01d7c54b433e01b300aa225f384735967bd8ace5d95c7d",
+    "work_covtype_robust_margin_holdout/PROTOCOL.md": "1d7b60d73a191102d840cf7624d01427be183c2e99770ffbf963e5140e961ee6",
+    "work_covtype_robust_margin_holdout/run_holdout.py": "90ac3ae304b0992ff90696bf57abba33cf375c4a7ad8336fdf3ce67b7f3916a4",
+    "work_covtype_robust_margin_holdout/data/known_used_indices.npy": "cd81a2f8850ad5e0c9d11a217e504dddec74c69cb6a324c299c955b55a876673",
+    "work_covtype_robust_margin_holdout/data/holdout_panels.npz": "b774e9d7ed78fc7fd1280cf3235a88d3ded0b6fa76151fab7d3fc9d54e18cec9",
+    "work_covtype_robust_margin_holdout/data/panel_audit.json": "0ccebdbeae1d0bfbde294f6489dbde9e9036850504e0e91fa2ffe8359637c2a1",
+    "work_covtype_45m_formal_v1/config.json": "27acb84a871a818f514a4261a3e0bec509168e1470dcd3d14a0dd220a6734ae8",
+    "work_covtype_45m_formal_v1/data/block_panels.npz": "c32a5f1dedeb70e523c5538ec5a37a72a238878217e02e9c7e0fd55cc682c2c4",
+    "work_covtype_boundary_flow_probe/run_boundary_flow.py": "45af7a3a3cc5d6c09631f74cf7cfccd7bf9617a5d5f1f0dabbaf8fa678cb1467"
+  },
+  "sha256": "a015c3c36fccb92e8c81c9d846e5f3a16d6c3614321139e3fc326b9b13b69aad"
+}

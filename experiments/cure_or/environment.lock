@@ -1,0 +1,10 @@
+python==3.12.*
+numpy==2.5.2
+pillow==12.3.0
+scikit-learn==1.9.0
+torch==2.13.0+cpu
+torchvision==0.28.0+cpu
+
+# Numerical contract: CPU float32 ConvNeXt feature extraction and NumPy float64
+# head fitting/scoring. Compatible replacement builds require a declared
+# computational deviation and cannot silently replace the registered run.

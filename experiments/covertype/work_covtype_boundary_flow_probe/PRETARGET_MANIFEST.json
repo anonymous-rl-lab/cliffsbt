@@ -1,0 +1,12 @@
+{
+  "files": {
+    "config.json": "1a7eecc539169fc782a353657c17fc5c06cee1864d092306c038aa3b7ed0d492",
+    "PROTOCOL.md": "1edf8e0898835e59ffcf403f0b14d7547d818215b1cd2c6b8440f8bdd80257d2",
+    "run_boundary_flow.py": "45af7a3a3cc5d6c09631f74cf7cfccd7bf9617a5d5f1f0dabbaf8fa678cb1467",
+    "FAILED_RUNS.md": "ea42190f4ce3f97e8283fc48ca0b73a6254d6deef0dbc586bb26f8ab685bceaf",
+    "data/prior_fixed_panels.npz": "9897d1f39c52b0cbc336db4eeb88ab04af6e895211721d2c9fa0c2f3e4493f92",
+    "data/flow_panels.npz": "ef1d0328f27231837853ae51c4790537f9b7fa0bd7e1a66e9e77450648dbb2ea",
+    "data/panel_audit.json": "01539fe6c3499f531882c0b1dc00eeb0af4dbc9cd7af0a3f28c26b8ffee8784a"
+  },
+  "sha256": "007539c72a4d70c41017ec613c04a31531a4156a08ace9df32bf402c5283c5f9"
+}

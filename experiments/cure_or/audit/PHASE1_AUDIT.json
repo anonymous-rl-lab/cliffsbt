@@ -1,0 +1,33 @@
+{
+  "all_pass": true,
+  "blind_commit_sha256": "4a888493531dfa797efa765adc2057e73564eacc59a9e42c86b8ef2b27c1b237",
+  "checks": {
+    "150_alarm_paths": true,
+    "all_images_crc_recorded": true,
+    "baseline_prediction_shape": true,
+    "blind_commit_fingerprint": true,
+    "blind_members_match_commit": true,
+    "candidate_prediction_shape": true,
+    "confirmation_not_scored": true,
+    "deployed_prediction_shape": true,
+    "exact_registered_phase1_files_present": true,
+    "feature_dimensions": true,
+    "five_repair_decisions": true,
+    "four_repairs_eligible": true,
+    "frozen_image_counts": true,
+    "hybrid25_shape": true,
+    "metadata_bound_to_registered_manifest": true,
+    "official_weights_bound": true,
+    "phase1_committed": true,
+    "phase2_outputs_absent": true,
+    "registered_axis_order": true,
+    "registered_manifest_fingerprint": true,
+    "seed127_abstains": true,
+    "warning_score_shape": true
+  },
+  "checks_passed": 22,
+  "checks_total": 22,
+  "phase2_executed": false,
+  "protocol_version": "2.0",
+  "registration": "https://osf.io/c6ygf"
+}

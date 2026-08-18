@@ -1,0 +1,758 @@
+[
+  {
+    "window": 0,
+    "lower_m": 2700,
+    "upper_m": 2715,
+    "class": 0,
+    "available": 317,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 0,
+    "lower_m": 2700,
+    "upper_m": 2715,
+    "class": 1,
+    "available": 4504,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 1,
+    "lower_m": 2715,
+    "upper_m": 2730,
+    "class": 0,
+    "available": 385,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 1,
+    "lower_m": 2715,
+    "upper_m": 2730,
+    "class": 1,
+    "available": 4617,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 2,
+    "lower_m": 2730,
+    "upper_m": 2745,
+    "class": 0,
+    "available": 379,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 2,
+    "lower_m": 2730,
+    "upper_m": 2745,
+    "class": 1,
+    "available": 4553,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 3,
+    "lower_m": 2745,
+    "upper_m": 2760,
+    "class": 0,
+    "available": 529,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 3,
+    "lower_m": 2745,
+    "upper_m": 2760,
+    "class": 1,
+    "available": 5364,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 4,
+    "lower_m": 2760,
+    "upper_m": 2775,
+    "class": 0,
+    "available": 551,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 4,
+    "lower_m": 2760,
+    "upper_m": 2775,
+    "class": 1,
+    "available": 5441,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 5,
+    "lower_m": 2775,
+    "upper_m": 2790,
+    "class": 0,
+    "available": 617,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 5,
+    "lower_m": 2775,
+    "upper_m": 2790,
+    "class": 1,
+    "available": 5552,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 6,
+    "lower_m": 2790,
+    "upper_m": 2805,
+    "class": 0,
+    "available": 857,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 6,
+    "lower_m": 2790,
+    "upper_m": 2805,
+    "class": 1,
+    "available": 5543,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 7,
+    "lower_m": 2805,
+    "upper_m": 2820,
+    "class": 0,
+    "available": 951,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 7,
+    "lower_m": 2805,
+    "upper_m": 2820,
+    "class": 1,
+    "available": 5660,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 8,
+    "lower_m": 2820,
+    "upper_m": 2835,
+    "class": 0,
+    "available": 1274,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 8,
+    "lower_m": 2820,
+    "upper_m": 2835,
+    "class": 1,
+    "available": 5795,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 9,
+    "lower_m": 2835,
+    "upper_m": 2850,
+    "class": 0,
+    "available": 1375,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 9,
+    "lower_m": 2835,
+    "upper_m": 2850,
+    "class": 1,
+    "available": 6233,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 10,
+    "lower_m": 2850,
+    "upper_m": 2865,
+    "class": 0,
+    "available": 1395,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 10,
+    "lower_m": 2850,
+    "upper_m": 2865,
+    "class": 1,
+    "available": 6927,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 11,
+    "lower_m": 2865,
+    "upper_m": 2880,
+    "class": 0,
+    "available": 1418,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 11,
+    "lower_m": 2865,
+    "upper_m": 2880,
+    "class": 1,
+    "available": 7107,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 12,
+    "lower_m": 2880,
+    "upper_m": 2895,
+    "class": 0,
+    "available": 1405,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 12,
+    "lower_m": 2880,
+    "upper_m": 2895,
+    "class": 1,
+    "available": 8016,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 13,
+    "lower_m": 2895,
+    "upper_m": 2910,
+    "class": 0,
+    "available": 1690,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 13,
+    "lower_m": 2895,
+    "upper_m": 2910,
+    "class": 1,
+    "available": 8778,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 14,
+    "lower_m": 2910,
+    "upper_m": 2925,
+    "class": 0,
+    "available": 2176,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 14,
+    "lower_m": 2910,
+    "upper_m": 2925,
+    "class": 1,
+    "available": 9120,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 15,
+    "lower_m": 2925,
+    "upper_m": 2940,
+    "class": 0,
+    "available": 2800,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 15,
+    "lower_m": 2925,
+    "upper_m": 2940,
+    "class": 1,
+    "available": 10031,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 16,
+    "lower_m": 2940,
+    "upper_m": 2955,
+    "class": 0,
+    "available": 3167,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 16,
+    "lower_m": 2940,
+    "upper_m": 2955,
+    "class": 1,
+    "available": 10143,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 17,
+    "lower_m": 2955,
+    "upper_m": 2970,
+    "class": 0,
+    "available": 3925,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 17,
+    "lower_m": 2955,
+    "upper_m": 2970,
+    "class": 1,
+    "available": 11043,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 18,
+    "lower_m": 2970,
+    "upper_m": 2985,
+    "class": 0,
+    "available": 4227,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 18,
+    "lower_m": 2970,
+    "upper_m": 2985,
+    "class": 1,
+    "available": 10309,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 19,
+    "lower_m": 2985,
+    "upper_m": 3000,
+    "class": 0,
+    "available": 4480,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 19,
+    "lower_m": 2985,
+    "upper_m": 3000,
+    "class": 1,
+    "available": 10099,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 20,
+    "lower_m": 3000,
+    "upper_m": 3015,
+    "class": 0,
+    "available": 4885,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 20,
+    "lower_m": 3000,
+    "upper_m": 3015,
+    "class": 1,
+    "available": 9375,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 21,
+    "lower_m": 3015,
+    "upper_m": 3030,
+    "class": 0,
+    "available": 5084,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 21,
+    "lower_m": 3015,
+    "upper_m": 3030,
+    "class": 1,
+    "available": 8190,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 22,
+    "lower_m": 3030,
+    "upper_m": 3045,
+    "class": 0,
+    "available": 5800,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 22,
+    "lower_m": 3030,
+    "upper_m": 3045,
+    "class": 1,
+    "available": 8034,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 23,
+    "lower_m": 3045,
+    "upper_m": 3060,
+    "class": 0,
+    "available": 5841,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 23,
+    "lower_m": 3045,
+    "upper_m": 3060,
+    "class": 1,
+    "available": 6038,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 24,
+    "lower_m": 3060,
+    "upper_m": 3075,
+    "class": 0,
+    "available": 6425,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 24,
+    "lower_m": 3060,
+    "upper_m": 3075,
+    "class": 1,
+    "available": 5777,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 25,
+    "lower_m": 3075,
+    "upper_m": 3090,
+    "class": 0,
+    "available": 6584,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 25,
+    "lower_m": 3075,
+    "upper_m": 3090,
+    "class": 1,
+    "available": 5139,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 26,
+    "lower_m": 3090,
+    "upper_m": 3105,
+    "class": 0,
+    "available": 7123,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 26,
+    "lower_m": 3090,
+    "upper_m": 3105,
+    "class": 1,
+    "available": 4687,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 27,
+    "lower_m": 3105,
+    "upper_m": 3120,
+    "class": 0,
+    "available": 7456,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 27,
+    "lower_m": 3105,
+    "upper_m": 3120,
+    "class": 1,
+    "available": 4565,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 28,
+    "lower_m": 3120,
+    "upper_m": 3135,
+    "class": 0,
+    "available": 7502,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 28,
+    "lower_m": 3120,
+    "upper_m": 3135,
+    "class": 1,
+    "available": 4372,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 29,
+    "lower_m": 3135,
+    "upper_m": 3150,
+    "class": 0,
+    "available": 7771,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 29,
+    "lower_m": 3135,
+    "upper_m": 3150,
+    "class": 1,
+    "available": 4260,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 30,
+    "lower_m": 3150,
+    "upper_m": 3165,
+    "class": 0,
+    "available": 7929,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 30,
+    "lower_m": 3150,
+    "upper_m": 3165,
+    "class": 1,
+    "available": 3910,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 31,
+    "lower_m": 3165,
+    "upper_m": 3180,
+    "class": 0,
+    "available": 8441,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 31,
+    "lower_m": 3165,
+    "upper_m": 3180,
+    "class": 1,
+    "available": 3524,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 32,
+    "lower_m": 3180,
+    "upper_m": 3195,
+    "class": 0,
+    "available": 8656,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 32,
+    "lower_m": 3180,
+    "upper_m": 3195,
+    "class": 1,
+    "available": 3501,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 33,
+    "lower_m": 3195,
+    "upper_m": 3210,
+    "class": 0,
+    "available": 9259,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 33,
+    "lower_m": 3195,
+    "upper_m": 3210,
+    "class": 1,
+    "available": 3092,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 34,
+    "lower_m": 3210,
+    "upper_m": 3225,
+    "class": 0,
+    "available": 9198,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 34,
+    "lower_m": 3210,
+    "upper_m": 3225,
+    "class": 1,
+    "available": 2722,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 35,
+    "lower_m": 3225,
+    "upper_m": 3240,
+    "class": 0,
+    "available": 8049,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 35,
+    "lower_m": 3225,
+    "upper_m": 3240,
+    "class": 1,
+    "available": 2369,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 36,
+    "lower_m": 3240,
+    "upper_m": 3255,
+    "class": 0,
+    "available": 7552,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 36,
+    "lower_m": 3240,
+    "upper_m": 3255,
+    "class": 1,
+    "available": 2449,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 37,
+    "lower_m": 3255,
+    "upper_m": 3270,
+    "class": 0,
+    "available": 6817,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 37,
+    "lower_m": 3255,
+    "upper_m": 3270,
+    "class": 1,
+    "available": 2169,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 38,
+    "lower_m": 3270,
+    "upper_m": 3285,
+    "class": 0,
+    "available": 5828,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 38,
+    "lower_m": 3270,
+    "upper_m": 3285,
+    "class": 1,
+    "available": 2060,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 39,
+    "lower_m": 3285,
+    "upper_m": 3300,
+    "class": 0,
+    "available": 4998,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 39,
+    "lower_m": 3285,
+    "upper_m": 3300,
+    "class": 1,
+    "available": 1526,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 40,
+    "lower_m": 3300,
+    "upper_m": 3315,
+    "class": 0,
+    "available": 4092,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 40,
+    "lower_m": 3300,
+    "upper_m": 3315,
+    "class": 1,
+    "available": 748,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 41,
+    "lower_m": 3315,
+    "upper_m": 3330,
+    "class": 0,
+    "available": 3274,
+    "fit": 48,
+    "flow": 256
+  },
+  {
+    "window": 41,
+    "lower_m": 3315,
+    "upper_m": 3330,
+    "class": 1,
+    "available": 419,
+    "fit": 48,
+    "flow": 256
+  }
+]

@@ -1,0 +1,83 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sbt-monitor"
+version = "0.1.0"
+description = "Ledger-first tools for signed boundary transport accounting, calibrated warning, and deployment-cliff diagnostics"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{name = "SBT Monitor Contributors"}]
+keywords = [
+  "distribution shift",
+  "model monitoring",
+  "signed boundary transport",
+  "generalization cliff",
+  "machine learning reliability",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development :: Quality Assurance",
+  "Typing :: Typed",
+]
+dependencies = ["numpy>=1.23"]
+
+[project.optional-dependencies]
+warning = ["scikit-learn>=1.2"]
+test = ["pytest>=7", "scikit-learn>=1.2"]
+dev = [
+  "pytest>=7",
+  "scikit-learn>=1.2",
+  "build>=1.2",
+  "twine>=5",
+  "ruff>=0.6",
+  "mypy>=1.10",
+]
+
+[project.scripts]
+sbt-monitor = "sbt_monitor.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+sbt_monitor = ["py.typed"]
+"sbt_monitor.data" = ["*.md"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_unused_configs = true
+warn_return_any = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+
+[tool.coverage.run]
+source = ["sbt_monitor"]
+branch = true

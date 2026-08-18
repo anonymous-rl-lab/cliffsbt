@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "experiment_name": "generalization_cliff_round10_training_intervention_probe_v2_5pct",
+  "output_tag": "round10_training_intervention_probe_v2_5pct",
+  "master_seed": 20261003,
+  "evaluation_seed": 20261003,
+  "torchsig_version": "2.1.1",
+  "design_provenance": "Round 10 specificity repair after the frozen 20-percent probe produced floor risk in both enriched arms; enrichment dose reduced to 5 percent before any fresh-seed formal replay",
+  "classes": ["bpsk", "qpsk", "8psk", "16qam"],
+  "signal": {
+    "sample_rate": 1.0,
+    "bandwidth": 0.25,
+    "num_iq_samples": 512,
+    "pulse_shape": "srrc",
+    "alpha_rolloff": 0.35
+  },
+  "training": {
+    "samples_per_class": 500,
+    "n_estimators": 240,
+    "min_samples_leaf": 2,
+    "n_jobs": 1
+  },
+  "calibration": {
+    "theta_center": [0.45, 0.65, -0.15],
+    "theta_offset_levels": [-0.12, -0.06, 0.0, 0.06, 0.12],
+    "samples_per_environment": 128,
+    "covariance_shrinkage": "LedoitWolf"
+  },
+  "risk_surface": {
+    "type": "quadratic",
+    "ridge_alpha": 0.0001,
+    "cv_folds": 5,
+    "mechanism_ball_radius": 0.08,
+    "remainder_buffer": 0.02
+  },
+  "target": {
+    "risk_margin_gamma": 0.04,
+    "rank_relative_tolerance": 0.03
+  },
+  "deployment": {
+    "shared_risk_boundary": 0.19984587722852512,
+    "shared_boundary_provenance": "frozen relative boundary from the independent Round 9 formal baseline model; protocol-relative, not an operational safety threshold",
+    "samples_per_window": 1000,
+    "crossing_confirmation_windows": 2,
+    "pre_plateau_windows": 6,
+    "drift_windows": 12,
+    "post_plateau_windows": 3,
+    "paths": [
+      {"name": "noise", "direction": [1.0, 0.0, 0.0], "start_scalar": -0.0466, "end_scalar": 0.109},
+      {"name": "mixed_gradient", "direction": [0.828588174642524, 0.557943795990443, -0.046263996350782995], "start_scalar": -0.0374, "end_scalar": 0.0956}
+    ]
+  },
+  "round10": {
+    "replicate_seeds": [20261001, 20261002],
+    "regime_order": ["support_depleted", "baseline", "random_broad", "cliff_aware"],
+    "fixed_groups": ["model_outputs", "complex_moments", "autocorrelation", "spectral"],
+    "bootstrap_draws": 10000,
+    "minimum_active_risk_range": 0.04,
+    "minimum_active_b_norm": 0.05,
+    "minimum_risk_surface_cv_r2": 0.70,
+    "maximum_Q_risk_null_ratio": 0.25,
+    "pilot_upgrade_rule": {
+      "minimum_mean_end_risk_reduction": 0.02,
+      "minimum_pair_fraction_improved": 0.75
+    },
+    "regimes": {
+      "support_depleted": {"type": "uniform", "low": -0.95, "high": -0.65, "source": "support_depleted"},
+      "baseline": {"type": "uniform", "low": -0.8, "high": -0.4, "source": "baseline"},
+      "random_broad": {"type": "random_broad_mixture", "enrichment_fraction": 0.05,
+        "broad_low": -0.8, "broad_high": 0.8},
+      "cliff_aware": {"type": "cliff_tube_mixture", "enrichment_fraction": 0.05,
+        "tube_jitter_std": 0.02, "clip_low": -1.0, "clip_high": 1.0}
+    }
+  }
+}

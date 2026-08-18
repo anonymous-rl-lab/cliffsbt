@@ -1,0 +1,5 @@
+arm,budget,hazard_hit_rate,unique_fragments,families,classes,severities,mean_boundary_pressure
+baseline,0,,0,0,0,0,
+random,1000,0.075,556,15,10,5,
+hazard,1000,1.0,262,15,10,5,2.5503855677843092
+coverage,1000,1.0,731,15,10,5,1.4006705611404031

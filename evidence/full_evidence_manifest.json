@@ -1,0 +1,13 @@
+{
+  "archive_name": "Cliff_boundary_transport_code_v6.zip",
+  "sha256": "751e2b1f5a10e6bd1201087475742cd338f6e4f647030db2ab83af33ab8c73e5",
+  "compressed_size_bytes": 151026589,
+  "download_uri": null,
+  "note": "The lightweight GitHub repository omits large source datasets, feature tensors, checkpoints, caches, and historical target arrays. Set download_uri after archival deposition, or supply --url to reproduce/download_full_evidence.py.",
+  "source_roots": [
+    "covertype",
+    "torchsig",
+    "round13_second_domain",
+    "cure_or"
+  ]
+}
